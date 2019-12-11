@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+}
+nav {
+  color: white;
+  position: fixed;
+}
+.navlinks {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  font-size: 30px;
+  transform: translateY(70%);
+  background-color: gray;
+
+  justify-content: space-between;
+}
+.navlinks li img {
+  width: 50px;
+  height: 50px;
+  padding-bottom: 20%;
+}
+.navlinks a {
+  text-decoration: none;
+  color: white;
+}
+.bgimg {
+  width: 100%;
+  height: 100vh;
+  background: #000 url("IMG_8742.jpg");
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  display: inline-flex;
+
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: -1;
+}
+.bgimg span {
+  font-family: "Bebas Neue", cursive;
+  font-size: 350%;
+  padding-bottom: 4%;
+  z-index: 20;
+  color: white;
+}
+.overlay {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  opacity: 0.5;
+  z-index: 19;
+}
+.title {
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  justify-self: center;
+  font-size: 50px;
+}
+.title2 {
+  background-color: black;
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+
+  font-size: 50px;
+}
+.skills {
+  font-family: "Bebas Neue", cursive;
+  padding: 0 10% 0% 10%;
+  display: inline-block;
+  height: 20vh;
+  font-size: 30px;
+  justify-content: center;
+}
+.skill-cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: gray;
+}
+.skill-cont button {
+  justify-self: center;
+  align-self: center;
+  height: 100px;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 3px solid black;
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.skill-cont button:hover {
+  transition: 0.6s;
+  background-color: black;
+  color: white;
+  border: none;
+}
+.skill-cont span {
+  padding: 20px;
+}
+.work {
+  margin-top: 200px;
+}
+.contact {
+  width: 100%;
+  background-color: gray;
+  color: black;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50vh;
+  margin-top: 500px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.field {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact-title {
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  justify-self: center;
+  font-size: 40px;
+}
+.logo {
+  align-self: center;
+  justify-self: center;
+  font-size: 150px;
+}
+.contact-field {
+  margin: 5%;
+  justify-self: center;
+  display: block;
+  width: 300px;
+}
+.inp {
+  margin-bottom: 4%;
+  width: 500px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  resize: none;
+}
+input {
+  height: 50px;
+  border: none;
+}
+
+.inp-button {
+  justify-self: center;
+  align-self: center;
+  height: 50px;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 3px solid black;
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.inp-button:hover {
+  transition: 0.6s;
+  background-color: black;
+  color: white;
+  border: none;
+}
+video {
+  height: 400px;
+  width: 800px;
+  max-width: 80%;
+  align-self: center;
+}
+.iconanim {
+  height: 200px;
+  padding: 20px;
+  align-self: center;
+  justify-self: center;
+}
+.bulbglow {
+  background-color: rgba(250, 221, 59, 0.5);
+  border-radius: 100%;
+}
+button a {
+  text-decoration: none;
+  color: black;
+}
+button a:hover {
+  text-decoration: none;
+  color: white;
+}
+@media only screen and (max-width: 1024px) {
+  .skills {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+  }
+  .skill-cont {
+    display: block;
+    text-align: center;
+    align-content: center;
+  }
+  .title {
+    margin: 5%;
+
+    height: 15vh;
+  }
+  nav {
+    display: none;
+  }
+  video {
+    width: 80%;
+    max-width: 80%;
+  }
+  .work {
+    margin-top: 15%;
+  }
+  .logo {
+    display: none;
+  }
+  .field {
+    display: flex;
+    justify-content: center;
+  }
+  .contact {
+    margin-top: 100px;
+    height: 60vh;
+    max-height: 100%;
+  }
+  .inp {
+    max-width: 100%;
+  }
+}

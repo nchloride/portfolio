@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="me.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Bebas+Neue|Lobster&display=swap"
+    rel="stylesheet"
+  />
+  <body>
+    <nav>
+      <ul class="navlinks">
+        <li>
+          <a href="#home"><img src="home-page.svg" alt="" title="Home"/></a>
+        </li>
+        <li>
+          <a href="#about"><img src="user.svg" alt="" title="About"/></a>
+        </li>
+        <li>
+          <a href="#works"
+            ><img src="configuration.svg" alt="" title="Works"
+          /></a>
+        </li>
+        <li>
+          <a href="#contact"
+            ><img src="telephone.svg" alt="" title="Contact"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="bgimg" id="home">
+      <span
+        ><h1>NOEL CARLO LOPEZ</h1>
+        <hr />
+        <p>Web Developer/Video Editor/Game Dev</p>
+      </span>
+
+      <div class="overlay"></div>
+    </div>
+    <div id="about" class="title" data-aos="fade-up"><h1>ABOUT</h1></div>
+    <div class="skills">
+      <div class="skill-cont" data-aos="fade-up">
+        <span
+          ><h1>Hobbies</h1>
+          <p>
+            I love designing interactive web pages, learning new techniques on
+            web-development, Creating entertaining videos and reading new stuff
+            about technology.
+          </p></span
+        >
+        <img src="web-development.svg" alt="" class="iconanim" />
+      </div>
+      <div class="skill-cont" data-aos="fade-up">
+        <img src="lightbulb.svg" alt="" class="iconanim bulb" />
+        <span
+          ><h1>Innovative</h1>
+          <p>
+            "Always seek improvement that others can benifit from" My life motto
+            is that always be a bigger person, always chase for your dreams and
+            always include others on your success
+          </p></span
+        >
+      </div>
+      <div class="skill-cont" data-aos="fade-up">
+        <span
+          ><h1>Goals</h1>
+          <p>
+            MY longterm goal is to become a part of something big... At this
+            moment I'm still working to improve myself... so that when the time
+            comes, when y'all talking about "Elon Musk","Steve Jobs", "Bill
+            Gates".. trust me I'll be in that conversation.. (just kidding)
+          </p></span
+        >
+        <button>
+          <a
+            href="https://drive.google.com/file/d/1WBUDX20GRsXbwWHAbcDP2a0mzq6ezgnH/view?usp=sharing"
+            target="_blank"
+            >RESUME</a
+          >
+        </button>
+      </div>
+    </div>
+    <div id="works" class="title work" data-aos="fade-up"><h1>WORKS</h1></div>
+    <div class="skills">
+      <div class="skill-cont" data-aos="fade-up">
+        <span style="justify-self: center; align-self: center;"
+          ><h1 style="text-align: center;">FILI-ISIPAN</h1>
+          <video controls>
+            <source src="introexi.mp4" type="video/mp4" />
+          </video>
+        </span>
+        <div style="justify-self: center; align-self: center;">
+          <p>
+            FILI-ISIPAN is an Android 3D Exploration Word Puzzle mobile game
+            that is inspired by the National Language of the Philippines,
+            Filipino. The player will act as Buboy, the protagonist. He was
+            selected by the Mystery Stone to be the holder of its power where
+            the stone will give him the power of manipulating all the letters of
+            the Filipino alphabet and construct Filipino words unto them.
+            FILI-ISIPAN will teach the players how to use their Critical
+            Thinking skills by creating new words on a specific given set of
+            words and on by this technique, the player will acquire better
+            vocabulary by thinking and giving more broad ideas to be able to
+            finish the game.
+          </p>
+          <button>
+            <a
+              href="https://drive.google.com/file/d/1Qhd3B7g9lHHIGFp_ts15Coq3DxUp3x8A/view?usp=sharing"
+              target="_blank"
+              >download</a
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="contact" id="contact" data-aos="slide-up">
+      <div class="field">
+        <div class="contact-field">
+          <form action="" class="form">
+            <h1 class="contact-title" style="color: black;">contact me</h1>
+            <input
+              type="textbox"
+              name=""
+              id=""
+              placeholder="Your email"
+              class="inp emailbox"
+            />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              class="inp messagebox"
+              placeholder="Your message"
+            ></textarea>
+            <input type="submit" class="inp-button" name="Submit" />
+          </form>
+        </div>
+        <div class="logo">NCTV</div>
+      </div>
+      <p>Noel Carlo Lopez © 2019</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 1000
+      });
+    </script>
+
+    <script>
+      var bulb = document.querySelector(".bulb");
+      bulb.addEventListener("mouseover", change);
+      function change() {
+        bulb.src = "lightbulb (1).svg";
+        bulb.classList.add("bulbglow");
+      }
+      bulb.addEventListener("mouseout", changeout);
+      function changeout() {
+        bulb.src = "lightbulb.svg";
+        bulb.classList.remove("bulbglow");
+      }
+    </script>
+    <script src="email.js"></script>
+  </body>
+</html>
