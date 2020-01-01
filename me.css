@@ -201,7 +201,7 @@ button a:hover {
   text-decoration: none;
   color: white;
 }
-@media only screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .bgimg span {
     font-size: 20px;
   }
@@ -239,7 +239,7 @@ button a:hover {
   }
   .contact {
     margin-top: 100px;
-    height: 100%;
+
     max-height: 100%;
   }
   .inp {
